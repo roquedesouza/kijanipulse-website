@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Merch - KijaniPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-emerald-800 text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Logo" class="h-12">
+        <h1 class="text-2xl font-bold">KIJANI PULSE</h1>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="activities.html" class="nav-link">Activities</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="merch.html" class="nav-link text-emerald-300 font-semibold">Merch</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <h1 class="text-5xl font-bold text-center text-emerald-800 mb-4">KijaniPulse Merch</h1>
+    <p class="text-center text-xl text-gray-600 mb-12">Wear the Green Message • Support the Movement</p>
+
+    <!-- Call to Action Button -->
+    <div class="text-center mb-12">
+      <button onclick="showMerch()" 
+              id="checkBtn"
+              class="bg-emerald-700 hover:bg-emerald-600 text-white text-xl font-semibold px-10 py-5 rounded-2xl shadow-lg transition flex items-center gap-3 mx-auto">
+        <i class="fas fa-tshirt"></i>
+        Check Them Out 🌱
+      </button>
+    </div>
+
+    <!-- Hidden Merch Grid -->
+    <div id="merchGrid" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- T-shirt 1 -->
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
+          <img src="assets/images/merch/tshirt-1.png" alt="Green T-shirt" class="max-h-full object-contain">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-xl">Classic Green T-Shirt</h3>
+          <p class="text-emerald-600">Full Logo Design</p>
+        </div>
+      </div>
+
+      <!-- T-shirt 2 -->
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
+          <img src="assets/images/merch/tshirt-2.png" alt="Black T-shirt" class="max-h-full object-contain">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-xl">Black Minimal T-Shirt</h3>
+          <p class="text-emerald-600">Clean & Bold</p>
+        </div>
+      </div>
+
+      <!-- T-shirt 3 -->
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
+          <img src="assets/images/merch/tshirt-3.png" alt="White T-shirt" class="max-h-full object-contain">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-xl">White Premium T-Shirt</h3>
+          <p class="text-emerald-600">Fresh Look</p>
+        </div>
+      </div>
+
+      <!-- T-shirt 4 -->
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
+          <img src="assets/images/merch/tshirt-4.png" alt="Lifestyle Collection" class="max-h-full object-contain">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-xl">Lifestyle Collection</h3>
+          <p class="text-emerald-600">T-shirts + Hoodies</p>
+        </div>
+      </div>
+
+      <!-- T-shirt 5 -->
+      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
+          <img src="assets/images/merch/tshirt-5.png" alt="Orange T-shirt" class="max-h-full object-contain">
+        </div>
+        <div class="p-6 text-center">
+          <h3 class="font-semibold text-xl">Energy Orange T-Shirt</h3>
+          <p class="text-emerald-600">Limited Edition</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-16 text-emerald-700 font-medium">
+      Every purchase helps fund tree planting and environmental projects 🌍
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    function showMerch() {
+      const grid = document.getElementById('merchGrid');
+      const btn = document.getElementById('checkBtn');
+      
+      grid.classList.remove('hidden');
+      grid.classList.add('grid');
+      
+      // Optional: Hide button after clicking
+      btn.style.display = 'none';
+    }
+  </script>
+</body>
+</html>

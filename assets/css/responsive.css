@@ -1,0 +1,48 @@
+/* assets/css/responsive.css */
+
+/* Mobile & Tablet Responsiveness */
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+
+    nav .flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .max-w-7xl {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .text-5xl {
+        font-size: 2.4rem;
+    }
+
+    .text-6xl {
+        font-size: 2.8rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve touch targets on mobile */
+a, button {
+    min-height: 44px;
+}

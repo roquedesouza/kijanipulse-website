@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - KijaniPulse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <nav class="bg-emerald-800 text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Logo" class="h-12">
+        <h1 class="text-2xl font-bold">KIJANI PULSE</h1>
+      </div>
+      <div class="hidden md:flex gap-8 text-lg">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="activities.html" class="nav-link">Activities</a>
+        <a href="team.html" class="nav-link">Team</a>
+        <a href="merch.html" class="nav-link">Merch</a>
+        <a href="contact.html" class="nav-link text-emerald-300 font-semibold">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="max-w-4xl mx-auto px-6 py-20">
+    <h1 class="text-5xl font-bold text-center text-emerald-800 mb-12">Get In Touch</h1>
+
+    <div class="bg-white rounded-3xl shadow-2xl p-10">
+      <form id="contactForm" class="space-y-6">
+        <div class="grid md:grid-cols-2 gap-6">
+          <input type="text" placeholder="Your Full Name" required class="border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
+          <input type="email" placeholder="Email Address" required class="border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
+        </div>
+        <input type="text" placeholder="Subject" required class="w-full border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
+        <textarea placeholder="Your Message..." rows="6" required class="w-full border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500"></textarea>
+        
+        <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-5 rounded-2xl font-semibold text-lg transition">
+          Send Message 🌱
+        </button>
+      </form>
+    </div>
+
+    <p class="text-center text-gray-600 mt-10">
+      St. Joseph Boys Science High School<br>Kilimanjaro, Tanzania
+    </p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
