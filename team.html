@@ -39,20 +39,16 @@
       <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover text-center">
         <div class="pt-10 pb-6 flex justify-center">
           <div class="relative">
-            <img src="assets/images/team/benedict.jpeg" 
-                 alt="Benedict Samwel Mfanga" 
-                 class="w-64 h-64 rounded-full object-cover border-8 border-emerald-600 shadow-2xl">
+            <img src="assets/images/team/benedict.jpeg" alt="Benedict Samwel Mfanga" class="w-64 h-64 rounded-full object-cover border-8 border-emerald-600 shadow-2xl">
           </div>
         </div>
         <div class="px-8 pb-6">
           <h3 class="text-2xl font-semibold">Benedict Samwel Mfanga</h3>
-          <p class="text-emerald-600 font-medium mt-1">Founder + Environment and Health Minister</p>
+          <p class="text-emerald-600 font-medium mt-1">Founder & Environment and Health Minister</p>
         </div>
         <div class="pb-8">
-          <button onclick="showContact(1)" 
-                  class="inline-flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 font-medium px-6 py-3 rounded-2xl transition">
-            <i class="fas fa-envelope"></i>
-            Contact
+          <button onclick="showContact(1)" class="inline-flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 font-medium px-6 py-3 rounded-2xl transition">
+            <i class="fas fa-envelope"></i> Contact
           </button>
         </div>
       </div>
@@ -61,9 +57,7 @@
       <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover text-center">
         <div class="pt-10 pb-6 flex justify-center">
           <div class="relative">
-            <img src="assets/images/team/roque.jpg" 
-                 alt="Roque Ricco Desouza" 
-                 class="w-64 h-64 rounded-full object-cover border-8 border-emerald-600 shadow-2xl">
+            <img src="assets/images/team/roque.jpg" alt="Roque Ricco Desouza" class="w-64 h-64 rounded-full object-cover border-8 border-emerald-600 shadow-2xl">
           </div>
         </div>
         <div class="px-8 pb-6">
@@ -71,23 +65,42 @@
           <p class="text-emerald-600 font-medium mt-1">Co-Founder</p>
         </div>
         <div class="pb-8">
-          <button onclick="showContact(2)" 
-                  class="inline-flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 font-medium px-6 py-3 rounded-2xl transition">
-            <i class="fas fa-envelope"></i>
-            Contact
+          <button onclick="showContact(2)" class="inline-flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 font-medium px-6 py-3 rounded-2xl transition">
+            <i class="fas fa-envelope"></i> Contact
           </button>
         </div>
       </div>
+    </div>
 
+    <!-- Ambassadors Section -->
+    <div class="mt-20">
+      <h2 class="text-4xl font-bold text-center text-emerald-800 mb-12">Our Ambassadors</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Brighton Remidius Ruhinduka</strong><br>Feza Boys Secondary and High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Lewis Losaru</strong><br>St. Joseph Boys High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Bildad Michael</strong><br>Agape Lutheran Junior Seminary</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Milliemarion Olotu</strong><br>Mpanda Girls Secondary School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Dayana Clemence</strong><br>Tabora Girls Secondary School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Deus William</strong><br>Feza Boys Secondary School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Tecla Deogratius Daffi</strong><br>Feza Girls Secondary and High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Edwin Myegeta</strong><br>St. Joseph Boys High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Saraphine Frank</strong><br>Alpha High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Dr. Victor Andrew</strong><br>IRDP University</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Martin John Hiza</strong><br>Miles & Kimberly White High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Janeth John Mwilangali</strong><br>Loyola High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Derick Francis</strong><br>St. Joseph High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Colman Mrema</strong><br>St. Joseph High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Sharline Shedrack</strong><br>Hendry Gogert High School</div>
+        <div class="bg-white p-6 rounded-2xl shadow"><strong>Anderson Alex</strong><br>Alpha High School</div>
+      </div>
     </div>
   </div>
 
-  <!-- Contact Modal -->
+  <!-- Contact Modal (Simplified - Only Email & Phone) -->
   <div id="contactModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
     <div class="bg-white rounded-3xl max-w-md w-full mx-4 overflow-hidden">
       <div class="p-8">
         <h2 id="modalName" class="text-2xl font-semibold text-center mb-8"></h2>
-        
         <div class="space-y-6 text-gray-700">
           <div class="flex items-center gap-4">
             <i class="fas fa-envelope text-emerald-600 text-xl"></i>
@@ -96,7 +109,6 @@
               <a href="#" id="modalEmail" class="text-emerald-600 hover:underline"></a>
             </div>
           </div>
-          
           <div class="flex items-center gap-4">
             <i class="fas fa-phone text-emerald-600 text-xl"></i>
             <div>
@@ -104,30 +116,10 @@
               <a href="#" id="modalPhone" class="text-emerald-600 hover:underline"></a>
             </div>
           </div>
-          
-          <div class="flex items-center gap-4">
-            <i class="fab fa-instagram text-emerald-600 text-xl"></i>
-            <div>
-              <p class="font-medium">Instagram</p>
-              <a href="#" id="modalIG" target="_blank" class="text-emerald-600 hover:underline"></a>
-            </div>
-          </div>
-          
-          <div class="flex items-center gap-4">
-            <i class="fab fa-linkedin text-emerald-600 text-xl"></i>
-            <div>
-              <p class="font-medium">LinkedIn</p>
-              <a href="#" id="modalLinkedIn" target="_blank" class="text-emerald-600 hover:underline"></a>
-            </div>
-          </div>
         </div>
       </div>
-      
       <div class="border-t p-4">
-        <button onclick="closeModal()" 
-                class="w-full py-4 text-emerald-700 font-medium hover:bg-gray-100 rounded-2xl">
-          Close
-        </button>
+        <button onclick="closeModal()" class="w-full py-4 text-emerald-700 font-medium hover:bg-gray-100 rounded-2xl">Close</button>
       </div>
     </div>
   </div>
@@ -135,44 +127,22 @@
   <!-- Scripts -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
-
   <script>
     function showContact(person) {
       const modal = document.getElementById('contactModal');
-      
       if (person === 1) {
-        // Benedict Samwel Mfanga
         document.getElementById('modalName').textContent = "Benedict Samwel Mfanga";
-        
         document.getElementById('modalEmail').textContent = "benedictmfanga@gmail.com";
         document.getElementById('modalEmail').href = "mailto:benedictmfanga@gmail.com";
-        
         document.getElementById('modalPhone').textContent = "+255 684 701 881";
         document.getElementById('modalPhone').href = "tel:+255684701881";
-        
-        document.getElementById('modalIG').textContent = "@benie.sm";
-        document.getElementById('modalIG').href = "https://www.instagram.com/benie.sm";
-        
-        document.getElementById('modalLinkedIn').textContent = "Benedict Mfanga";
-        document.getElementById('modalLinkedIn').href = "https://www.linkedin.com/in/benedict-mfanga-b96771385";
-      } 
-      else if (person === 2) {
-        // Roque Ricco Desouza
+      } else if (person === 2) {
         document.getElementById('modalName').textContent = "Roque Ricco Desouza";
-        
         document.getElementById('modalEmail').textContent = "roquedesouza209@gmail.com";
         document.getElementById('modalEmail').href = "mailto:roquedesouza209@gmail.com";
-        
         document.getElementById('modalPhone').textContent = "+255 744 952 619";
         document.getElementById('modalPhone').href = "tel:+255744952619";
-        
-        document.getElementById('modalIG').textContent = "@r_.oque";
-        document.getElementById('modalIG').href = "https://www.instagram.com/r_.oque";
-        
-        document.getElementById('modalLinkedIn').textContent = "Roque Ricco Desouza";
-        document.getElementById('modalLinkedIn').href = "https://www.linkedin.com/in/roque-desouza";
       }
-      
       modal.classList.remove('hidden');
     }
 
