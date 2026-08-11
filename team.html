@@ -30,73 +30,133 @@
   </nav>
 
   <div class="max-w-6xl mx-auto px-6 py-16">
-    <h1 class="text-5xl font-bold text-center text-emerald-800 mb-4">Our Leadership Team</h1>
-    <p class="text-center text-xl text-gray-600 mb-16">Passionate students driving change</p>
+    
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h1 class="text-5xl font-bold text-emerald-800 mb-4">Our Leadership Team</h1>
+      <p class="text-xl text-gray-600">Passionate students driving change</p>
+    </div>
 
-    <div class="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+    <!-- Founders Section -->
+    <div class="mb-20">
+      <h2 class="text-3xl font-bold text-emerald-700 mb-8 text-center">Founders</h2>
       
-      <!-- Benedict Samwel Mfanga -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover text-center">
-        <div class="pt-10 pb-6 flex justify-center">
-          <div class="relative">
-            <img src="assets/images/team/benedict.jpg" alt="Benedict Samwel Mfanga" class="w-64 h-64 rounded-full object-cover border-8 border-emerald-600 shadow-2xl">
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        
+        <!-- Benedict -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-2xl text-emerald-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Benedict Samwel Mfanga</h3>
+              <p class="text-emerald-600 text-sm">Founder & Environment and Health Minister</p>
+            </div>
           </div>
-        </div>
-        <div class="px-8 pb-6">
-          <h3 class="text-2xl font-semibold">Benedict Samwel Mfanga</h3>
-          <p class="text-emerald-600 font-medium mt-1">Founder & Environment and Health Minister</p>
-        </div>
-        <div class="pb-8">
-          <button onclick="showContact(1)" class="inline-flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 font-medium px-6 py-3 rounded-2xl transition">
-            <i class="fas fa-envelope"></i> Contact
+          <button onclick="showContact(1)" 
+                  class="mt-4 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium py-3 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fas fa-envelope"></i>
+            Contact
           </button>
         </div>
-      </div>
 
-      <!-- Roque Ricco Desouza -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover text-center">
-        <div class="pt-10 pb-6 flex justify-center">
-          <div class="relative">
-            <img src="assets/images/team/roque.jpg" alt="Roque Ricco Desouza" class="w-64 h-64 rounded-full object-cover border-8 border-emerald-600 shadow-2xl">
+        <!-- Roque -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-2xl text-emerald-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Roque Ricco Desouza</h3>
+              <p class="text-emerald-600 text-sm">Co-Founder</p>
+            </div>
           </div>
-        </div>
-        <div class="px-8 pb-6">
-          <h3 class="text-2xl font-semibold">Roque Ricco Desouza</h3>
-          <p class="text-emerald-600 font-medium mt-1">Co-Founder</p>
-        </div>
-        <div class="pb-8">
-          <button onclick="showContact(2)" class="inline-flex items-center gap-2 bg-emerald-100 hover:bg-emerald-200 text-emerald-700 font-medium px-6 py-3 rounded-2xl transition">
-            <i class="fas fa-envelope"></i> Contact
+          <button onclick="showContact(2)" 
+                  class="mt-4 w-full bg-emerald-50 hover:bg-emerald-100 text-emerald-700 font-medium py-3 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fas fa-envelope"></i>
+            Contact
           </button>
         </div>
+
       </div>
     </div>
 
     <!-- Ambassadors Section -->
-    <div class="mt-20">
-      <h2 class="text-4xl font-bold text-center text-emerald-800 mb-12">Our Ambassadors</h2>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Brighton Remidius Ruhinduka</strong><br>Feza Boys Secondary and High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Lewis Losaru</strong><br>St. Joseph Boys High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Bildad Michael</strong><br>Agape Lutheran Junior Seminary</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Milliemarion Olotu</strong><br>Mpanda Girls Secondary School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Dayana Clemence</strong><br>Tabora Girls Secondary School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Deus William</strong><br>Feza Boys Secondary School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Tecla Deogratius Daffi</strong><br>Feza Girls Secondary and High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Edwin Myegeta</strong><br>St. Joseph Boys High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Saraphine Frank</strong><br>Alpha High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Dr. Victor Andrew</strong><br>IRDP University</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Martin John Hiza</strong><br>Miles & Kimberly White High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Janeth John Mwilangali</strong><br>Loyola High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Derick Francis</strong><br>St. Joseph High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Colman Mrema</strong><br>St. Joseph High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Sharline Shedrack</strong><br>Hendry Gogert High School</div>
-        <div class="bg-white p-6 rounded-2xl shadow"><strong>Anderson Alex</strong><br>Alpha High School</div>
+    <div>
+      <h2 class="text-3xl font-bold text-emerald-700 mb-8 text-center">Ambassadors</h2>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Brighton Remidius Ruhinduka</h4>
+          <p class="text-sm text-gray-600 mt-1">Feza Boys Secondary and High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Lewis Losaru</h4>
+          <p class="text-sm text-gray-600 mt-1">St. Joseph Boys High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Bildad Michael</h4>
+          <p class="text-sm text-gray-600 mt-1">Agape Lutheran Junior Seminary</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Milliemarion Olotu</h4>
+          <p class="text-sm text-gray-600 mt-1">Mpanda Girls Secondary School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Dayana Clemence</h4>
+          <p class="text-sm text-gray-600 mt-1">Tabora Girls Secondary School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Deus William</h4>
+          <p class="text-sm text-gray-600 mt-1">Feza Boys Secondary School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Tecla Deogratius Daffi</h4>
+          <p class="text-sm text-gray-600 mt-1">Feza Girls Secondary and High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Edwin Myegeta</h4>
+          <p class="text-sm text-gray-600 mt-1">St. Joseph Boys High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Saraphine Frank</h4>
+          <p class="text-sm text-gray-600 mt-1">Alpha High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Dr. Victor Andrew</h4>
+          <p class="text-sm text-gray-600 mt-1">IRDP University</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Martin John Hiza</h4>
+          <p class="text-sm text-gray-600 mt-1">Miles & Kimberly White High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Janeth John Mwilangali</h4>
+          <p class="text-sm text-gray-600 mt-1">Loyola High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Derick Francis</h4>
+          <p class="text-sm text-gray-600 mt-1">St. Joseph High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Colman Mrema</h4>
+          <p class="text-sm text-gray-600 mt-1">St. Joseph High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Sharline Shedrack</h4>
+          <p class="text-sm text-gray-600 mt-1">Hendry Gogert High School</p>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition">
+          <h4 class="font-semibold text-lg">Anderson Alex</h4>
+          <p class="text-sm text-gray-600 mt-1">Alpha High School</p>
+        </div>
       </div>
     </div>
+
   </div>
 
-  <!-- Contact Modal (Simplified - Only Email & Phone) -->
+  <!-- Contact Modal -->
   <div id="contactModal" class="hidden fixed inset-0 bg-black/70 flex items-center justify-center z-50">
     <div class="bg-white rounded-3xl max-w-md w-full mx-4 overflow-hidden">
       <div class="p-8">
@@ -119,7 +179,9 @@
         </div>
       </div>
       <div class="border-t p-4">
-        <button onclick="closeModal()" class="w-full py-4 text-emerald-700 font-medium hover:bg-gray-100 rounded-2xl">Close</button>
+        <button onclick="closeModal()" class="w-full py-4 text-emerald-700 font-medium hover:bg-gray-100 rounded-2xl">
+          Close
+        </button>
       </div>
     </div>
   </div>
