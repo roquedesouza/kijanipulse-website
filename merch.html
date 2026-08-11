@@ -31,98 +31,91 @@
 
   <div class="max-w-7xl mx-auto px-6 py-16">
     <h1 class="text-5xl font-bold text-center text-emerald-800 mb-4">KijaniPulse Merch</h1>
-    <p class="text-center text-xl text-gray-600 mb-12">Wear the Green Message • Support the Movement</p>
+    <p class="text-center text-xl text-gray-600 mb-16">Wear the Green Message • Support the Movement</p>
 
-    <!-- Call to Action Button -->
-    <div class="text-center mb-12">
-      <button onclick="showMerch()" 
-              id="checkBtn"
-              class="bg-emerald-700 hover:bg-emerald-600 text-white text-xl font-semibold px-10 py-5 rounded-2xl shadow-lg transition flex items-center gap-3 mx-auto">
-        <i class="fas fa-tshirt"></i>
-        Check Them Out 🌱
-      </button>
+    <!-- Featured Designs -->
+    <div class="mb-16">
+      <h2 class="text-2xl font-semibold text-emerald-800 text-center mb-8">Featured Designs</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        
+        <!-- Classic Green -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+          <div class="h-96 bg-emerald-50 flex items-center justify-center p-8">
+            <img src="assets/images/merch/tshirt-1.png" alt="Classic Green T-Shirt" class="max-h-full object-contain">
+          </div>
+          <div class="p-7 text-center">
+            <h3 class="font-semibold text-2xl text-gray-800">Classic Green T-Shirt</h3>
+            <p class="text-emerald-600 mt-1">Full Logo Design</p>
+            <p class="text-sm text-gray-500 mt-3">Our signature look — bold, clean, and full of purpose.</p>
+          </div>
+        </div>
+
+        <!-- Black Minimal -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+          <div class="h-96 bg-gray-900 flex items-center justify-center p-8">
+            <img src="assets/images/merch/tshirt-3.png" alt="Black Minimal T-Shirt" class="max-h-full object-contain">
+          </div>
+          <div class="p-7 text-center">
+            <h3 class="font-semibold text-2xl text-gray-800">Black Minimal T-Shirt</h3>
+            <p class="text-emerald-600 mt-1">Clean & Bold</p>
+            <p class="text-sm text-gray-500 mt-3">Understated power. Perfect for everyday wear.</p>
+          </div>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Hidden Merch Grid -->
-    <div id="merchGrid" class="hidden grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- T-shirt 1 - Green full logo -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
-        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
-          <img src="assets/images/merch/tshirt-1.png" alt="Classic Green T-Shirt" class="max-h-full object-contain">
-        </div>
-        <div class="p-6 text-center">
-          <h3 class="font-semibold text-xl">Classic Green T-Shirt</h3>
-          <p class="text-emerald-600">Full Logo Design</p>
-        </div>
-      </div>
+    <!-- More Designs -->
+    <div>
+      <h2 class="text-2xl font-semibold text-emerald-800 text-center mb-8">More Designs</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- T-shirt 2 - White (was wrongly labeled Black) -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
-        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
-          <img src="assets/images/merch/tshirt-2.png" alt="White Premium T-Shirt" class="max-h-full object-contain">
+        <!-- White Premium -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+          <div class="h-72 bg-gray-50 flex items-center justify-center p-6">
+            <img src="assets/images/merch/tshirt-2.png" alt="White Premium T-Shirt" class="max-h-full object-contain">
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-semibold text-xl">White Premium T-Shirt</h3>
+            <p class="text-emerald-600">Fresh Look</p>
+          </div>
         </div>
-        <div class="p-6 text-center">
-          <h3 class="font-semibold text-xl">White Premium T-Shirt</h3>
-          <p class="text-emerald-600">Fresh Look</p>
-        </div>
-      </div>
 
-      <!-- T-shirt 3 - Black (was wrongly labeled White) -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
-        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
-          <img src="assets/images/merch/tshirt-3.png" alt="Black Minimal T-Shirt" class="max-h-full object-contain">
+        <!-- Lifestyle Collection -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+          <div class="h-72 bg-amber-50 flex items-center justify-center p-6">
+            <img src="assets/images/merch/tshirt-4.png" alt="Lifestyle Collection" class="max-h-full object-contain">
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-semibold text-xl">Lifestyle Collection</h3>
+            <p class="text-emerald-600">Neutral & Everyday</p>
+          </div>
         </div>
-        <div class="p-6 text-center">
-          <h3 class="font-semibold text-xl">Black Minimal T-Shirt</h3>
-          <p class="text-emerald-600">Clean & Bold</p>
-        </div>
-      </div>
 
-      <!-- T-shirt 4 - Beige/Lifestyle -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
-        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
-          <img src="assets/images/merch/tshirt-4.png" alt="Lifestyle Collection" class="max-h-full object-contain">
+        <!-- Signature White Tee -->
+        <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
+          <div class="h-72 bg-gray-50 flex items-center justify-center p-6">
+            <img src="assets/images/merch/tshirt-5.png" alt="Signature White Tee" class="max-h-full object-contain">
+          </div>
+          <div class="p-6 text-center">
+            <h3 class="font-semibold text-xl">Signature White Tee</h3>
+            <p class="text-emerald-600">Worn with Pride</p>
+          </div>
         </div>
-        <div class="p-6 text-center">
-          <h3 class="font-semibold text-xl">Lifestyle Collection</h3>
-          <p class="text-emerald-600">Neutral & Everyday</p>
-        </div>
-      </div>
 
-      <!-- T-shirt 5 - White lifestyle (was wrongly labeled Orange) -->
-      <div class="bg-white rounded-3xl overflow-hidden shadow-xl card-hover">
-        <div class="h-80 bg-gray-100 flex items-center justify-center p-6">
-          <img src="assets/images/merch/tshirt-5.png" alt="Signature White Tee" class="max-h-full object-contain">
-        </div>
-        <div class="p-6 text-center">
-          <h3 class="font-semibold text-xl">Signature White Tee</h3>
-          <p class="text-emerald-600">Worn with Pride</p>
-        </div>
       </div>
-
     </div>
 
-    <div class="text-center mt-16 text-emerald-700 font-medium">
-      Every purchase helps fund tree planting and environmental projects 🌍
+    <div class="text-center mt-20">
+      <p class="text-emerald-700 font-medium text-lg">
+        Every purchase helps fund tree planting and environmental projects 🌍
+      </p>
+      <p class="text-gray-500 mt-2 text-sm">Interested in ordering? Reach out to us via the Contact page.</p>
     </div>
   </div>
 
   <!-- Scripts -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>
-
-  <script>
-    function showMerch() {
-      const grid = document.getElementById('merchGrid');
-      const btn = document.getElementById('checkBtn');
-      
-      grid.classList.remove('hidden');
-      grid.classList.add('grid');
-      
-      // Optional: Hide button after clicking
-      btn.style.display = 'none';
-    }
-  </script>
 </body>
 </html>
