@@ -7,7 +7,8 @@ Student-led environmental initiative at St. Joseph Boys Science High School, Kil
 
 **Website:** https://kijanipulse-foundation.vercel.app
 
-**Instagram:** [@kijanipulse_foundation](https://instagram.com/kijanipulse_foundation)
+**Instagram:** [@kijanipulse_foundation](https://instagram.com/kijanipulse_foundation)  
+**LinkedIn:** [KijaniPulse Foundation](https://www.linkedin.com/in/kijanipulse-foundation-093165414/)
 
 ---
 
@@ -34,8 +35,10 @@ Our mission is to mobilize students through education, innovation, and action to
 
 ## 📧 Contact
 
-- **Benedict Samwel Mfanga** — Founder + Environment and Health Minister
-- **Roque Ricco Desouza** — Co-Founder
+- **Benedict Samwel Mfanga** — Founder + Environment and Health Minister  
+  Phone: +255 684 701 881
+- **Roque Ricco Desouza** — Co-Founder  
+  Phone: +255 693 856 869
 
 ---
 
