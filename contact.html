@@ -4,56 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us - KijaniPulse</title>
+  <meta name="description" content="Get in touch with the KijaniPulse Network founders and team.">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/responsive.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 flex flex-col min-h-screen">
 
   <!-- Navbar -->
   <nav class="bg-emerald-800 text-white sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <img src="assets/images/logo.png" alt="Logo" class="h-12">
-        <h1 class="text-2xl font-bold">KIJANI PULSE</h1>
-      </div>
-      <div class="hidden md:flex gap-8 text-lg">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="activities.html" class="nav-link">Activities</a>
-        <a href="team.html" class="nav-link">Team</a>
-        <a href="merch.html" class="nav-link">Merch</a>
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="KijaniPulse Logo" class="h-12 w-auto">
+        <div>
+          <h1 class="text-2xl font-bold">KIJANI PULSE</h1>
+          <p class="text-xs text-emerald-200 -mt-1 hidden sm:block">Green Minds in Action</p>
+        </div>
+      </a>
+
+      <div class="hidden md:flex gap-8 text-lg items-center">
+        <a href="index.html" class="nav-link hover:text-emerald-300">Home</a>
+        <a href="about.html" class="nav-link hover:text-emerald-300">About</a>
+        <a href="activities.html" class="nav-link hover:text-emerald-300">Activities</a>
+        <a href="team.html" class="nav-link hover:text-emerald-300">Team</a>
         <a href="contact.html" class="nav-link text-emerald-300 font-semibold">Contact</a>
+      </div>
+
+      <button id="menu-toggle" class="md:hidden text-2xl p-2 rounded-lg hover:bg-emerald-700 transition" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden md:hidden bg-emerald-900 border-t border-emerald-700">
+      <div class="px-6 py-4 flex flex-col gap-1 text-lg">
+        <a href="index.html" class="py-3 px-3 rounded-lg hover:bg-emerald-800 transition">Home</a>
+        <a href="about.html" class="py-3 px-3 rounded-lg hover:bg-emerald-800 transition">About</a>
+        <a href="activities.html" class="py-3 px-3 rounded-lg hover:bg-emerald-800 transition">Activities</a>
+        <a href="team.html" class="py-3 px-3 rounded-lg hover:bg-emerald-800 transition">Team</a>
+        <a href="contact.html" class="py-3 px-3 rounded-lg bg-emerald-800 text-emerald-200 font-semibold">Contact</a>
       </div>
     </div>
   </nav>
 
-  <div class="max-w-4xl mx-auto px-6 py-20">
-    <h1 class="text-5xl font-bold text-center text-emerald-800 mb-12">Get In Touch</h1>
+  <main class="flex-grow">
+    <div class="max-w-4xl mx-auto px-6 py-20">
+      <h1 class="text-5xl font-bold text-center text-emerald-800 mb-4">Get In Touch</h1>
+      <p class="text-center text-xl text-gray-600 mb-12">We’d love to hear from you</p>
 
-    <div class="bg-white rounded-3xl shadow-2xl p-10">
-      <form id="contactForm" class="space-y-6">
-        <div class="grid md:grid-cols-2 gap-6">
-          <input type="text" placeholder="Your Full Name" required class="border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
-          <input type="email" placeholder="Email Address" required class="border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+
+        <!-- Benedict -->
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-2xl text-emerald-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Benedict Samwel Mfanga</h3>
+              <p class="text-emerald-600 text-sm">Founder</p>
+            </div>
+          </div>
+          <div class="space-y-4 text-gray-700">
+            <a href="mailto:benedictmfanga@gmail.com" class="flex items-center gap-3 hover:text-emerald-700 transition">
+              <i class="fas fa-envelope text-emerald-600"></i>
+              <span>benedictmfanga@gmail.com</span>
+            </a>
+            <a href="tel:+255684701881" class="flex items-center gap-3 hover:text-emerald-700 transition">
+              <i class="fas fa-phone text-emerald-600"></i>
+              <span>+255 684 701 881</span>
+            </a>
+          </div>
         </div>
-        <input type="text" placeholder="Subject" required class="w-full border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500">
-        <textarea placeholder="Your Message..." rows="6" required class="w-full border border-gray-300 rounded-2xl px-6 py-4 focus:outline-none focus:border-emerald-500"></textarea>
-        
-        <button type="submit" class="w-full bg-emerald-700 hover:bg-emerald-600 text-white py-5 rounded-2xl font-semibold text-lg transition">
-          Send Message 🌱
-        </button>
-      </form>
+
+        <!-- Roque -->
+        <div class="bg-white rounded-3xl shadow-xl p-8">
+          <div class="flex items-center gap-4 mb-6">
+            <div class="w-14 h-14 bg-emerald-100 rounded-full flex items-center justify-center">
+              <i class="fas fa-user text-2xl text-emerald-600"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold">Roque Ricco Desouza</h3>
+              <p class="text-emerald-600 text-sm">Co-Founder</p>
+            </div>
+          </div>
+          <div class="space-y-4 text-gray-700">
+            <a href="mailto:roquedesouza209@gmail.com" class="flex items-center gap-3 hover:text-emerald-700 transition">
+              <i class="fas fa-envelope text-emerald-600"></i>
+              <span>roquedesouza209@gmail.com</span>
+            </a>
+            <a href="tel:+255744952619" class="flex items-center gap-3 hover:text-emerald-700 transition">
+              <i class="fas fa-phone text-emerald-600"></i>
+              <span>+255 744 952 619</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-3xl shadow-xl p-8 text-center">
+        <p class="text-gray-700 mb-4">
+          <i class="fas fa-map-marker-alt text-emerald-600 mr-2"></i>
+          St. Joseph Boys Science High School<br>Kilimanjaro, Tanzania
+        </p>
+        <a href="https://instagram.com/kijanipulse_foundation" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 text-emerald-700 hover:text-emerald-900 font-medium transition">
+          <i class="fab fa-instagram text-xl"></i>
+          @kijanipulse_foundation
+        </a>
+      </div>
     </div>
+  </main>
 
-    <p class="text-center text-gray-600 mt-10">
-      St. Joseph Boys Science High School<br>Kilimanjaro, Tanzania
-    </p>
-  </div>
+  <!-- Footer -->
+  <footer class="bg-emerald-950 text-emerald-200 py-12 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="font-semibold text-white text-lg mb-1">KijaniPulse Network</p>
+      <p class="text-sm mb-5">Where Green Ideas Become Real Impact</p>
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="https://instagram.com/kijanipulse_foundation" target="_blank" rel="noopener noreferrer" class="text-2xl hover:text-white transition" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <p>&copy; <span class="current-year"></span> KijaniPulse Network. All Rights Reserved.</p>
+      <p class="text-sm mt-2">A Youth-Led Environmental Initiative 🌱</p>
+      <p class="text-xs mt-4 text-emerald-400">St. Joseph Boys Science High School, Kilimanjaro, Tanzania</p>
+    </div>
+  </footer>
 
-  <!-- Scripts -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/script.js"></script>
 </body>
 </html>
